@@ -40,20 +40,20 @@ label5.place(x=0,y=0)
 label6=Label(root,bg='#D5CEA3',width=17,height=12)
 label6.place(x=13,y=80)
 #==========Buttom=================
-buttom1 = Button(root,text='register',bg='#3C2A21',width=18,fg='#fafafa',height=3,border=0,command=lambda:sing_up())
+buttom1 = Button(root,text='Register',bg='#3C2A21',width=18,fg='#fafafa',height=3,border=0,command=lambda:sing_up())
 buttom1.place(x = 10,y=68)
-buttom2 = Button(root,text='login',bg='#3C2A21',fg='#fafafa',width=18,height=3,border=0,command=lambda:log_in())
+buttom2 = Button(root,text='Login',bg='#3C2A21',fg='#fafafa',width=18,height=3,border=0,command=lambda:log_in())
 buttom2.place(x = 10,y=122)
-buttom3 = Button(root,text='program information',bg='#3C2A21',fg='#fafafa',width=18,height=3,border=0,command=lambda:information())
+buttom3 = Button(root,text='About',bg='#3C2A21',fg='#fafafa',width=18,height=3,border=0,command=lambda:information())
 buttom3.place(x = 10,y=176)
-buttom4 = Button(root,text='contact us',bg='#3C2A21',fg='#fafafa',width=18,height=3,border=0,command=lambda:contact_us())
+buttom4 = Button(root,text='Contact us',bg='#3C2A21',fg='#fafafa',width=18,height=3,border=0,command=lambda:contact_us())
 buttom4.place(x = 10,y=230)
 
 #=============================================Buttom ming======================================
 # Registration
 def sing_up():
     git = Tk()
-    git.title('register')
+    git.title('Register')
     git.geometry('410x260')
     git.resizable(width=False, height=False)
     git.iconbitmap('./icons/libraries_84323.ico')
@@ -68,13 +68,13 @@ def sing_up():
     entry4.place(x=120, y=165)
     labelg = Label(git, text='name:', font=('tahoma', 12),bg='#D5CEA3')
     labelg.place(x=15, y=37)
-    labelg1 = Label(git, text='family:', font=('tahoma', 12),bg='#D5CEA3')
+    labelg1 = Label(git, text='lastname:', font=('tahoma', 12),bg='#D5CEA3')
     labelg1.place(x=15, y=82)
     labelg2 = Label(git, text='email:', font=('tahoma', 12),bg='#D5CEA3')
     labelg2.place(x=15, y=122)
     labelg3 = Label(git, text='password:', font=('tahoma', 12),bg='#D5CEA3')
     labelg3.place(x=15, y=163)
-    buttom3 = Button(git, text='register', bg='#D06224', border=5, width=8,command=lambda:data(entry1, entry2, entry3, entry4))
+    buttom3 = Button(git, text='Register', bg='#D06224', border=5, width=8,command=lambda:data(entry1, entry2, entry3, entry4))
     buttom3.place(x=210, y=210)
 
 #===========Entering registration information in the database==========
@@ -142,7 +142,7 @@ def data(x,y,z,d):
 #================================Login======================================
 def log_in():
     git3 = Tk()
-    git3.title('login')
+    git3.title('Login')
     git3.geometry('410x160')
     git3.resizable(width=False, height=False)
     git3.iconbitmap('./icons/libraries_84323.ico')
@@ -155,7 +155,7 @@ def log_in():
     labelg2.place(x=15, y=85)
     labelg3 = Label(git3, text='email:', font=('tahoma', 12),bg='#D5CEA3')
     labelg3.place(x=15, y=40)
-    buttom4 = Button(git3, text='login', bg='#D06224',border=5, width=9, command=lambda: login_validation(entry1,entry2))
+    buttom4 = Button(git3, text='Login', bg='#D06224',border=5, width=9, command=lambda: login_validation(entry1,entry2))
     buttom4.place(x=200, y=122)
 
 #===========Checking the login information in the database============
@@ -189,7 +189,7 @@ def login_validation(x,y):
 #==============================Program information====================================
 def information():
     inf = Tk()
-    inf.title('Program information')
+    inf.title('About')
     inf.geometry('450x160')
     inf.resizable(width=False, height=False)
     inf.iconbitmap('./icons/libraries_84323.ico')
